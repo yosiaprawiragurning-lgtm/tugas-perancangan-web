@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas Web 1</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 10px; text-align: center; vertical-align: top; }
+        .keterangan { text-align: left; }
+        img, video { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Baris Header -->
+        <tr>
+            <th>Audio</th>
+            <th>Video</th>
+            <th>Image</th>
+            <th>Keterangan</th>
+        </tr>
+
+        <!-- Baris Konten Atas -->
+        <tr>
+            <td>
+                <audio controls>
+                    <source src="audio-anda.mp3" type="audio/mpeg">
+                    Browser Anda tidak mendukung elemen audio.
+                </audio>
+            </td>
+            <td>
+                <video width="300" controls>
+                    <source src="video-anda.mp4" type="video/mp4">
+                </video>
+            </td>
+            <td>
+                <img src="https://placeholder.com" alt="Logo ST Bhinneka">
+                <p><strong>ST Bhinneka</strong><br>UNIVERSITAS</p>
+            </td>
+            <td class="keterangan">
+                <strong>Biodata Diri:</strong><br>
+                Nama: Artita Pancarani Br Tarigan<br>
+                NIM: 2503311371<br>
+                Jurusan: Teknik Informatika
+            </td>
+        </tr>
+
+        <!-- Baris Judul Video & Youtube -->
+        <tr>
+            <th colspan="2">Video</th>
+            <th colspan="2">Youtube</th>
+        </tr>
+
+        <!-- Baris Konten Bawah -->
+        <tr>
+            <td colspan="2">
+                <video width="100%" controls>
+                    <source src="video-lebar.mp4" type="video/mp4">
+                </video>
+                <p>Deskripsi Video Indonesia</p>
+            </td>
+            <td colspan="2">
+                <!-- Video Youtube 1 -->
+                <iframe width="100%" height="150" src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
+                <br><br>
+                <!-- Video Youtube 2 -->
+                <iframe width="100%" height="150" src="https://youtube.com" frameborder="0" allowfullscreen></iframe>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
