@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form - Style Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #63d471 0%, #238c47 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: rgba(30, 110, 55, 0.4);
+            padding: 35px 30px;
+            border-radius: 5px;
+            width: 320px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .form-container h3 {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="date"],
+        .input-group input[type="email"],
+        .input-group input[type="tel"],
+        .input-group input[type="password"] {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            color: #ffffff;
+            padding: 6px 0;
+            font-size: 13px;
+            outline: none;
+            box-sizing: border-box;
+            transition: border-bottom-color 0.3s;
+        }
+
+        .input-group input:focus {
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .input-group input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+        }
+
+        .input-group input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .radio-group {
+            text-align: left;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            padding-left: 2px;
+        }
+
+        .radio-group label {
+            margin-right: 12px;
+            cursor: pointer;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 4px;
+            accent-color: #ffffff; 
+            vertical-align: middle;
+        }
+
+        .btn-register {
+            width: 100%;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            color: #ffffff;
+            padding: 10px;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-register:hover {
+            background-color: #ffffff;
+            color: #238c47;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 11px;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h3>Silahkan Isikan Data</h3>
+    
+    <form action="#" method="POST">
+        <div class="input-group">
+            <input type="text" placeholder="First name" required>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Middle name">
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Last name" required>
+        </div>
+        <div class="input-group">
+            <input type="date" required title="Tanggal Lahir">
+        </div>
+        
+        <div class="radio-group">
+            <span>Jenis Kelamin : </span>
+            <input type="radio" name="jk" id="pria" value="Pria" required>
+            <label for="pria">Pria</label>
+            <input type="radio" name="jk" id="wanita" value="Wanita">
+            <label for="wanita">Wanita</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" placeholder="Tempat Tinggal">
+        </div>
+        <div class="input-group">
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+            <input type="tel" placeholder="Phone">
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit" class="btn-register">REGISTER</button>
+        
+        <div>
+            <a href="#" class="back-link">Kembali / Back</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
